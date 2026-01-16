@@ -1,0 +1,32 @@
+Plagiarism and Similarity Analysis Dashboard
+Project Overview
+This repository contains a data visualization dashboard designed to detect and analyze document similarity across a collection of technical files. Using advanced similarity scoring algorithms, the dashboard provides an intuitive interface for identifying potential plagiarism, document duplicates, and "high-risk" content overlaps.
+
+The primary goal is to transform raw similarity matrices into actionable insights for academic or professional integrity reviews.
+
+Key Features
+Similarity Score Matrix: A heatmap visualization identifying clusters of high-overlap between file pairs.
+
+High-Similarity Breakdown: A stacked bar chart highlighting specific documents that exceed threshold limits, including 1:1 duplicates.
+
+Risk Distribution Profiling: A high-level executive summary (Pie Chart) categorizing comparisons into "High Risk" (32.9%) vs. "Low Risk" (67.1%).
+
+Granular Pairwise Analysis: A bubble chart matrix providing exact percentage matches and color-coded risk flags for deep-dive investigation.
+
+Technical Stack
+Data Processing: Python (Pandas, NumPy)
+
+Similarity Logic: [Insert Method, e.g., TF-IDF, Cosine Similarity, or Jaccard Index]
+
+Visualization: [Insert Tool, e.g., Tableau, Power BI, or Plotly/Dash]
+
+File Formats Supported: PDF, TXT, and DOCX
+
+Dashboard Insights
+Based on the current dataset analysis:
+
+Total Comparisons: 140 pairs.
+
+Critical Findings: 46 cases (32.9%) flagged for manual review due to high similarity scores.
+
+Key Outliers: KNN.pdf and svm_merged.pdf show the highest degree of structural overlap with other documents in the repository.
